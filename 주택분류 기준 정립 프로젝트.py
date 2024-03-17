@@ -20,7 +20,6 @@ from urllib.parse import quote_plus
 from sqlalchemy import create_engine
 from dateutil.relativedelta import relativedelta
 
-# 건축물대장이 나온 달 그 다음 달에 돌려야 함
 month = (dt.datetime.now() - relativedelta(months = 2)).strftime('%Y%m')
 stym = (dt.datetime.now()).strftime('%Y%m')
 
